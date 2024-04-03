@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 class="page__title">{{ page.title }}</h1>
+    {% endunless %}
+    <h1 class="" >Gallery</h1>
+    <div style="  display: grid; grid-template-columns: auto auto auto auto;">
+      {% for item in page.images %}
+        <div style=" margin: 10px">
+          <img src="{{item}}" style="border-radius: 10px; box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);">
+        </div> 
+      {% endfor %}
+    </div>
+  </div>
+</div>

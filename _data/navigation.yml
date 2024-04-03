@@ -1,0 +1,15 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+  - title: "Posts"
+    url: /posts/
+  - title: "Gallery"
+    url: /gallery/
+  - title: "CV"
+    url: /assets/files/dummy.pdf
+    download: "Yes"
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/

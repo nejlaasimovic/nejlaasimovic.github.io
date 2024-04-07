@@ -2,13 +2,16 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Posts"
-    url: /posts/
-  - title: "Gallery"
-    url: /gallery/
+  - title: "Research"
+    url: /research/
   - title: "CV"
     url: /assets/files/dummy.pdf
     download: "Yes"
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Contact"
+    url: /contact/    
+
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

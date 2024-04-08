@@ -19,18 +19,24 @@
 </div>
 {% endif %}
 
-<div class="author__content" style="text-align: center;">
-  <!-- Removed the <h3> tag around the paragraph as it's not semantically correct to have a <p> tag inside an <h3>. Also, corrected the misplaced style and itemprop attributes. -->
-  <p class="author__name p-name" style="font-size: 18px;" itemprop="name">
-    Postdoctoral Fellow, University of Pennsylvania
-  </p>
-  {% if author.bio %}
-    <!-- Added the <p> tag for consistency and clarity, with inline style for font-size. -->
-    <p class="author__bio p-note" style="font-size: 18px;" itemprop="description">
-      Incoming Assistant Professor in Computational Social Science, McCourt School of Public Policy, Georgetown University
-    </p>
-  {% endif %}  -->
-</div>
+ <div class="author__avatar">
+      <a href="{{ author.home | default: '/' | absolute_url }}">
+        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="author__content">
+    <h3 class="author__name p-name" style="font-size: 16px; itemprop="name">
+      <p>Postdoctoral Fellow, University of Pennsylvania</p>
+    </h3>
+    {% if author.bio %}
+      <div class="author__bio p-note" style="font-size: 16px;" itemprop="description">
+        Incoming Assistant Professor in Computational Social Science, McCourt School of Public Policy, Georgetown University
+      </div>
+    {% endif %}
+  </div>
+  
       {% if author.links %}
         {% for link in author.links %}
           {% if link.label and link.url %}

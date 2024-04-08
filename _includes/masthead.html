@@ -12,7 +12,7 @@
             {% endif %}
             <li class="masthead__menu-item">
               {% if link.download %}
-                <a href="{{ link.url }}" download target="_blank">{{ link.title }}</a>
+                <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
               {% else %}
                 <a href="{{ domain }}{{ link.url }}"  {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
               {% endif %}

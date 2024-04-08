@@ -9,8 +9,7 @@ main:
     download: "Yes"
   - title: "Teaching"
     url: /teaching/
-  - title: "Contact"
-    url: /contact/    
+   
 
   # - title: "Sample Collections"
   #   url: /collection-archive/

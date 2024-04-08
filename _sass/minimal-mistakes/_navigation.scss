@@ -197,9 +197,9 @@
       margin-left: 0;
      
       font-style: normal;
-      font-weight: 400px;
+      font-weight: bold;
       line-height: 1em;
-      font-size: calc((3.4 * 1.2vw) + 1rem);
+      font-size: calc((1.4 * 1.2vw) + 1rem);
       text-transform: none;
      
     }
@@ -238,7 +238,7 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: #EC255A;
+        background: black;
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;

@@ -12,6 +12,4 @@ teaching:
     subtitle: "Teaching Assistant in Fall 2019, Spring 2020"
     url: "Evaluations"
   
-
-   
 ---

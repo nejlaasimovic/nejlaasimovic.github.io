@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Postdoctoral Fellow, University of Pennsylvania"
+  name             : ""
   avatar           : "/assets/images/Asimovic_PHOTO.jpg"
-  bio              : "Senior AI Researcher working on large-scale generative models."
+  bio              : ""
   location         : "Somewhere"
 # Site Footer
 

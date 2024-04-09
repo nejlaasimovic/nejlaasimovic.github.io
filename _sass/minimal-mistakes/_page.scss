@@ -424,3 +424,13 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+@media screen and (min-width: 480px) {
+ 
+
+.author__avatar{
+width: 40%;
+}
+.author__content{
+  width: 60%;
+}
+}

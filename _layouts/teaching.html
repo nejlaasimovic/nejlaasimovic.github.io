@@ -3,26 +3,31 @@ layout: default
 
 ---
 
-{% for assistant in page.teaching %}
 
-<div style="width: 90%;display: flex;">
+
+<div style="width: 90%;display: flex; ">
     <div style="width: 100%;" data-block-type="2"
         data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}"
         id="block-16578cd387fa7453dcfc">
-        <div class="sqs-block-content">
+        <div class="sqs-block-content" style="margin-left: 17%;">
+            <p style="font-weight: bold;">New York University</p>
+                
+                <hr style="  margin: auto; ;">
+            {% for assistant in page.teaching %}
             <div>
                 <p style="text-align:center;" data-rte-preserve-empty="true"></p>
-                <p style="text-align:center;white-space:pre-wrap;">{{assistant.title}}<br>{{assistant.subtitle}}</p>
-                <p style="text-align:center;white-space:pre-wrap;">[<a href="/s/asimovic-teaching-evaluations.pdf"><span
-                            class="sqsrte-text-color--custom" style="color: #0300FF">{{assistant.url}}</span></a>]</p>
+                
+                
+                <h4 style="white-space:pre-wrap;">{{assistant.title}}</h4>
+                <span>{{assistant.subtitle}}</span>
+                <span style="white-space:pre-wrap;">[<a href="/s/asimovic-teaching-evaluations.pdf"><span
+                            class="sqsrte-text-color--custom" style="color: #0300FF">{{assistant.url}}</span></a>]</span>
             </div>
+            
+            {% endfor %}    
         </div>
-        {% unless forloop.last %}
-        <hr style="margin-top:77px !important; text-align: center; width: 80%; margin: auto;">
-        {% endunless %}
+       
     </div>
   
 </div>
 
-
-{% endfor %}

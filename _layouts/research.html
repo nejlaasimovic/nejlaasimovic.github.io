@@ -1,37 +1,174 @@
 ---
 layout: default
 ---
-<div style="margin: 0px !important;padding: 0px;" >
-    <div class="content " style="width: 70%; margin: auto;margin-top: 15px;">
-      
-      
-      
-      
-      
-      
-      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-60ac1c8d6aa28a56487a0998"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-4edb160f66d860f7b872"><div class="sqs-block-content">
 
-<div class="sqs-html-content">
-  <h1 style="text-align:center;margin-left:40px;white-space:pre-wrap;font-weight: 400;font-size: calc((2 - 1)* 1.2vw + 1rem);">PEER-REVIEWED PAPERS</h1><p class="sqsrte-large" style="white-space:pre-wrap;">{% for research in page.researches %}<span class="sqsrte-text-color--custom" style="color: hsl(349, 98%, 24%);font-size:21px;line-height: 1.6em;">{{research.title}}</span></p><p class="" style="white-space:pre-wrap;font-size: 14.5px;">{{research.subtitle}}  [<a href="https://www.pnas.org/doi/10.1073/pnas.2022819118">{{research.version}}</a>]{% if research.pre-print %} [<a href="/s/pnas2022819118-1.pdf">{{research.pre-print}}]</a>{% endif %} {% if research.appendix %}[<a href="/s/pnas2022819118sapp.pdf">{{research.appendix}}</a>]{% endif %}</p><p class="" style="white-space:pre-wrap;font-size: 14.5px;">{% if research.year %}<em>{{research.year}} </em>{% endif %}<a href="https://www.pnas.org/content/118/25/e2022819118"><em>{{research.url}}</em></a></p>{% if research.text %}<p class="" style="white-space:pre-wrap;font-size: 16px;"><em>{{research.text}}</em> </p>{% endif %}<p style="text-align:justify;white-space: normal !important;margin-left:40px;white-space:pre-wrap;font-weight: 400;font-size: 16px;" class=""><span class="sqsrte-text-color--custom" style="color: #1B34B6">Abstract:</span><span class="sqsrte-text-color--custom" style="color: hsl(247, 96%, 52%)"> </span>{{research.abstract}}</p>{% endfor %}
-</div>
+<div style="margin: 0px !important; padding: 0px">
+  <div class="content" style="width: 70%; margin: auto; margin-top: 15px">
+    <div
+      class="sqs-layout sqs-grid-12 columns-12"
+      data-type="page-section"
+      id="page-section-60ac1c8d6aa28a56487a0998"
+    >
+      <div class="row sqs-row">
+        <div class="col sqs-col-12 span-12">
+          <div
+            class="sqs-block html-block sqs-block-html"
+            data-block-type="2"
+            data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
+            id="block-4edb160f66d860f7b872"
+          >
+            <div class="sqs-block-content">
+              <div class="sqs-html-content">
+                <h1
+                  style="
+                  font-size: 28px;
+                  color: #666;"
+                >
+                  PEER-REVIEWED PAPERS
+                </h1>
+                <hr>
+                <p class="sqsrte-large">
+                  {% for research in page.pre_reviewed_papers %}<span
+                    class="sqsrte-text-color--custom"
+                    style="
+                    color: #111;
+                    font-weight: bold;
+                    "
+                    >{{research.title}}</span
+                  >
+                </p>
+                <p class="" style="font-size: 14.5px;     color: #900;">
+                  {{research.subtitle}} [<a
+                    href="https://www.pnas.org/doi/10.1073/pnas.2022819118"
+                    >{{research.version}}</a
+                  >]{% if research.pre-print %} [<a
+                    href="/s/pnas2022819118-1.pdf"
+                    >{{research.pre-print}}]</a
+                  >{% endif %} {% if research.appendix %}[<a
+                    href="/s/pnas2022819118sapp.pdf"
+                    >{{research.appendix}}</a
+                  >]{% endif %}
+                </p>
+                <p class="" style=" font-size: 14.5px;     color: #900;">
+                  {% if research.year %}<em>{{research.year}} </em>{% endif %}<a
+                    href="https://www.pnas.org/content/118/25/e2022819118"
+                    ><em>{{research.url}}</em></a
+                  >
+                </p>
+                {% if research.text %}
+                <p class="" style="font-size: 16px">
+                  <em>{{research.text}}</em>
+                </p>
+                {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div
+            class="sqs-block horizontalrule-block sqs-block-horizontalrule"
+            data-block-type="47"
+            id="block-yui_3_17_2_1_1660678743548_5138"
+          >
+            <div class="sqs-block-content"></div>
+          </div>
+          <div
+            class="sqs-block html-block sqs-block-html"
+            data-block-type="2"
+            data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
+            id="block-yui_3_17_2_1_1660678743548_5199"
+          >
+            <div class="sqs-block-content">
+              <div class="sqs-html-content">
+                <h4
+                  style="
+                  font-size: 28px;
+                  color: #666;"
+                >
+                  WORK IN PROGRESS
+                </h4>
+                <hr>
+                {% for work in page.work_in_progress %}
+                <p class="sqsrte-large">
+                  <span
+                    class="sqsrte-text-color--custom"
+                    style="
+                    color: #111;
+                    font-weight: bold;
+                    "
+                    >“{{work.title}}”
+                  </span>
+                  {% if work.link %}
+                   <span style=" font-size: 16px">[<a href="{{work.link.url}}">{{work.link.text}}</a>]</span>
+                  {% endif %}
 
-
-
-</div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1660678743548_5138"><div class="sqs-block-content"><hr></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-yui_3_17_2_1_1660678743548_5199"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <h4 style="text-align:center;white-space:pre-wrap;font-weight: 400;font-size: calc((2 - 1)* 1.2vw + 1rem);">WORK IN PROGRESS</h4><p class="sqsrte-large" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(125, 1, 1);font-size:21px;line-height: 1.6em;">“Unlocking Outgroup Access Online: Evidence From Cyprus” </span></p><p class="" style="white-space:pre-wrap;font-size: 16px;">[JMP available upon request]</p><p style="text-align:justify;white-space: normal !important;margin-left:40px;white-space:pre-wrap;" class=""><span class="sqsrte-text-color--custom" style="color: hsl(235, 85%, 41%) ;font-size: 16px;">Abstract:</span> In regions with frozen conflicts, where group divisions span not only geographical but also linguistic lines, how does the high cost of accessing the outgroup affect interethnic relations, and how can it be reduced? When constraints hinder access to outgroup members, the online environment provides a distinct opportunity for unmediated and private exposure to the outgroup. Yet, this potential remains particularly unrealized in contexts that are linguistically divided, further exacerbating information disparities. To assess the feasibility and impact of lowering the cost of outgroup access online, I instructed Greek-speaking and Turkish-speaking Cypriots to seek outgroup content of their interest over the course of two weeks, aided by translation tools. The results show significantly improved attitudes and behaviors toward ethnic outgroups, particularly among minority group members and those unaffected by conflict displacement. Complementing experimental data with surveys, interviews, and online discourse analysis, I highlight the positive effects that online immersion in outgroup spaces can have on those with limited offline exposure opportunities. However, this is contingent upon reducing language barriers and providing participants with agency to explore outgroup spaces as they wish. I contend that doing so is especially potent, as it enables the witnessing of conflicts within the outgroup, fosters an awareness of shared similarities, and thus reduces anxiety, ultimately challenging the prevalent perception of the outgroup as uniformly hostile. The findings also highlight the cost of outgroup access as an important factor in explaining differing outcomes in recent studies about social media's impact on ethnic polarization in post-conflict areas (Asimovic et al., 2021).</p><p class="sqsrte-large" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(122, 1, 1);font-size: 18px;">“Engineering a Multi-Ethnic Society: The Case of Brcko District”</span></p><p class="" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(122, 1, 1)"> </span>[<a href="/s/asimovic-abstract-brcko.pdf">abstract]</a>[paper available upon request]    </p><p class="sqsrte-large" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(117, 3, 3)">“Bridging the Digital Divide: Data Access and Integration of Venezuelan Migrants in Colombia” </span></p><p class="" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(8, 8, 8)">(with Mateo Vasquez-Cortes and Kevin Munger)</span><span class="sqsrte-text-color--custom" style="color: rgb(130, 128, 128)"> </span>[data collection underway; <a href="/s/Bridging_Digital_Divide___Venezuelan_Migrants_in_Colombia-8.pdf">pre-analysis plan</a>]</p><p class="sqsrte-large" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(134, 1, 1)">“Reaching Across the Political Aisle: Overcoming Challenges in Using Social Media for Recruiting Politically Diverse Respondents” </span></p><p class="" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(10, 9, 9)">(with Megan Brown, Maggie Macdonald, Rajeshwari Majumdar, Lena Song) </span>[<a href="/s/xx-1.pdf">abstract</a>][under review]    </p><p class="sqsrte-large" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(124, 0, 0)">“The Space to Belong To: Understanding Community Belonging within Multi-Ethnic Settings” </span></p><p class="" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(21, 21, 21)">(with Florian Foos, Marnie Howlett, and Carl Muller-Crepon)</span></p><p class="sqsrte-large" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p>
-</div>
-
-</div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_17_2_1_1660678743548_6361"><div class="sqs-block-content"><hr></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}" id="block-yui_3_17_2_1_1660678743548_6424"><div class="sqs-block-content">
-
-<div class="sqs-html-content">
-  <h4 style="text-align:center;white-space:pre-wrap;font-weight: 400;font-size: calc((2 - 1)* 1.2vw + 1rem);">OTHER WRITING</h4><p class="sqsrte-large" style="white-space:pre-wrap;font-size: calc((1.4 - 1)* 1.2vw + 1rem);">“Navigating the Media Landscape in the 21st Century: The Role of Critical Media Literacy in Bosnia and Herzegovina” </p><p class="" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(10, 9, 9);font-size: calc((1.1- 1)* 1.2vw + 1rem);">(with Amie Scheerder, <em>Center for Sustainable Peace and Democratic Development</em>) </span>[<a href="/s/PUB_Bosnia21_Paper-Critical-Media-Literacy.pdf">report</a>]</p><p class="sqsrte-large" style="white-space:pre-wrap;font-size: calc((1.4 - 1)* 1.2vw + 1rem);">“Social Media Data in Conflict Research”</p><p class="" style="white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: rgb(13, 13, 13);font-size: calc((1.1- 1)* 1.2vw + 1rem);"> (with Jane Esberg)</span><span class="sqsrte-text-color--custom" style="color: rgb(85, 84, 84)"> </span>[<a href="/s/Social-Media-Data-in-Conflict-Research.pdf">report</a>]</p><p class="" style="white-space:pre-wrap;"><br><br></p>
-</div>
-
-
-
-</div></div></div></div></div>
+                  {% if work.subtitle %}
+                   <span style=" font-size: 16px">{{work.subtitle}}</span>
+                  {% endif %}
+                </p>
+                
+                <p class="" >
+                  <span
+                    class="sqsrte-text-color--custom"
+                    style="font-size: 14.5px;     color: #900;"
+                    >{{work.authors}}</span
+                  >
+                </p>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div
+            class="sqs-block horizontalrule-block sqs-block-horizontalrule"
+            data-block-type="47"
+            id="block-yui_3_17_2_1_1660678743548_6361"
+          >
+            <div class="sqs-block-content"></div>
+          </div>
+          <div
+            class="sqs-block html-block sqs-block-html"
+            data-block-type="2"
+            data-border-radii='{"topLeft":{"unit":"px","value":0.0},"topRight":{"unit":"px","value":0.0},"bottomLeft":{"unit":"px","value":0.0},"bottomRight":{"unit":"px","value":0.0}}'
+            id="block-yui_3_17_2_1_1660678743548_6424"
+          >
+            <div class="sqs-block-content">
+              <div class="sqs-html-content">
+                <h4
+                  style="
+                  font-size: 28px;
+                  color: #666;"
+                >
+                  OTHER WRITING
+                </h4>
+                <hr>
+                
+                {% for writing in page.other_writing %}
+                <p
+                  class="sqsrte-large"
+                  style="
+                  color: #111;
+                  font-weight: bold;
+                  "
+                >
+                  <span>"{{writing.title}}"</span>
+                  
+                  {% if writing.link %}
+                   <span style=" font-size: 16px">[<a href="{{writing.link.url}}">{{writing.link.text}}</a>]</span>
+                  {% endif %}
+                </p>
+                <p class="">
+                  <span
+                    class="sqsrte-text-color--custom"
+                    style="font-size: 14.5px;     color: #900;;
+                    "
+                    >{{writing.authors}} </span
+                  >
+                </p>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  
+  </div>
 </div>

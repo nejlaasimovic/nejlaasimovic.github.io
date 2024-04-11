@@ -1,6 +1,27 @@
 /* ==========================================================================
    jQuery plugin settings and other scripts
    ========================================================================== */
+   window.onload = function () {
+var collapsibleButtons = document.querySelectorAll('.collapsible');
+  console.log('sdjk')
+  collapsibleButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var targetId = button.getAttribute('data-target');
+      var targetDiv = document.getElementById(targetId);
+
+      var isContentVisible = targetDiv.style.display !== 'none';
+      targetDiv.style.display = isContentVisible ? 'none' : (isMobile() ? 'block' : 'flex');
+      button.classList.toggle('down');
+
+      // Store state and current timestamp
+      var currentState = {
+        isOpen: !isContentVisible,
+        timestamp: new Date().getTime()
+      };
+      localStorage.setItem(targetId, JSON.stringify(currentState));
+    });
+  });
+};
 
 $(document).ready(function() {
   // Sticky footer

@@ -97,3 +97,36 @@
 }
   
 /* Media queries - Responsive timeline on screens less than 600px wide */
+
+/* ****************************************
+Abstract
+ *****************************************/
+
+/* Abstract button */
+.collapsible {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  padding: 0px;
+}
+
+// Arrow pointing up for abstract button
+.collapsible::before {
+  padding-right: 7px;
+  content: "\2BC8";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+}
+
+// Arrow pointing down for abstract button
+.down::before {
+  padding-right: 7px;
+  content: "\2BC8";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-block;
+  transform: translate(-5px, 5px) rotate(90deg) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}

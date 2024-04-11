@@ -28,42 +28,23 @@ layout: default
                 <hr>
                 
                 {% for research in page.pre_reviewed_papers %}
-                  <p class="sqsrte-large"><span
-                      class="sqsrte-text-color--custom"
-                      style="
-                      font-weight: bold;
-                      "
-                      >{{research.title}}</span
-                    >
+                  <p class="sqsrte-large" style="margin: 0;">
+                    <span >{{research.authors}}</span>
+                    <span style="font-weight: bold;">"{{research.title}}"</span>
+                    <span style="font-style: italic;">{{research.subtitle}}</span>
+                    <span>{{research.reference}}</span>
                   </p>
-                  <p class="" style="font-size: 14.5px;">
-                    {{research.subtitle}} [<a
-                      href="https://www.pnas.org/doi/10.1073/pnas.2022819118"
+                  <p>
+                    [<a
+                      href="{{research.journal_url}}"
                       >{{research.version}}</a
-                    >]{% if research.pre-print %} [<a
-                      href="/s/pnas2022819118-1.pdf"
-                      >{{research.pre-print}}]</a
-                    >{% endif %} {% if research.appendix %}[<a
-                      href="/s/pnas2022819118sapp.pdf"
-                      >{{research.appendix}}</a
-                    >]{% endif %}
+                    >]
                   </p>
-                  <p class="" style=" font-size: 14.5px;">
-                    {% if research.year %}<em>{{research.year}} </em>{% endif %}<a
-                      href="https://www.pnas.org/content/118/25/e2022819118"
-                      ><em>{{research.url}}</em></a
-                    >
-                  </p>
-                  {% if research.text %}
-                  <p class="" style="font-size: 16px">
-                    <em>{{research.text}}</em>
-                  </p>
-                  {% endif %}
                   {% if research.abstract %}
                   <button type="button" class="collapsible" data-target="markdown-content-{{research.title}}">Abstract</button>
                   <div id="markdown-content-{{research.title}}" style="display: none;">
                     <div class="paper-content">
-                      {{writing.abstract}}
+                      {{research.abstract}}
                     </div>
                   </div>
                   {% endif %}
@@ -93,29 +74,12 @@ layout: default
                 </h4>
                 <hr>
                 {% for work in page.work_in_progress %}
-                <p class="sqsrte-large">
-                  <span
-                    class="sqsrte-text-color--custom"
-                    style="font-weight: bold;
-                    "
-                    >“{{work.title}}”
-                  </span>
-                  {% if work.link %}
-                   <span style=" font-size: 16px">[<a href="{{work.link.url}}">{{work.link.text}}</a>]</span>
-                  {% endif %}
-
-                  {% if work.subtitle %}
-                   <span style=" font-size: 16px">{{work.subtitle}}</span>
-                  {% endif %}
+                <p class="sqsrte-large" style="margin: 0;">
+                  <span >{{work.authors}}</span>
+                  <span style="font-weight: bold;">"{{work.title}}"</span>
+                  <span style="font-style: italic;">{{work.status}}</span>
                 </p>
-                
-                <p class="" >
-                  <span
-                    class="sqsrte-text-color--custom"
-                    style="font-size: 14.5px;"
-                    >{{work.authors}}</span
-                  >
-                </p>
+              
                 {% if work.abstract %}
                   <button type="button" class="collapsible" data-target="markdown-content-{{work.title}}">Abstract</button>
                   <div id="markdown-content-{{work.title}}" style="display: none;">
@@ -151,24 +115,20 @@ layout: default
                 <hr>
                 
                 {% for writing in page.other_writing %}
-                <p
-                  class="sqsrte-large"
-                  style="font-weight: bold;
-                  "
-                >
-                  <span>"{{writing.title}}"</span>
-                  
-                  {% if writing.link %}
-                   <span style=" font-size: 16px">[<a href="{{writing.link.url}}">{{writing.link.text}}</a>]</span>
-                  {% endif %}
+                
+                <p class="sqsrte-large" style="margin: 0;">
+                  <span >{{writing.authors}}</span>
+                  <span style="font-weight: bold;">"{{writing.title}}"</span>
+                  <span style="font-style: italic;">{{writing.subtitle}}</span>
                 </p>
-                <p class="">
-                  <span
-                    class="sqsrte-text-color--custom"
-                    style="font-size: 14.5px;"
-                    >{{writing.authors}} </span
-                  >
+                
+                <p>
+                  [<a
+                    href="{{writing.report_url}}"
+                    >report</a
+                  >]
                 </p>
+
                 {% if writing.abstract %}
                   <button type="button" class="collapsible" data-target="markdown-content-{{writing.title}}">Abstract</button>
                   <div id="markdown-content-{{writing.title}}" style="display: none;">

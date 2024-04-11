@@ -4,7 +4,7 @@ permalink: /research/
 pre_reviewed_papers:
   - title: "Testing the Effects of Facebook Usage in an Ethnically Polarized Setting"
     authors: "Asimovic, Nejla, Jonathan Nagler, Richard Bonneau, and Joshua A. Tucker."
-    version: " journal version"
+    version: "journal version"
     pre-print : "pre-print"
     appendix : "appendix"
     reference: "118, no. 25 (2021)"
@@ -14,7 +14,7 @@ pre_reviewed_papers:
 
   - title: "Replicating the Effects of Facebook Deactivation in an Ethnically Polarized Setting"
     authors: "Asimovic, Nejla, Jonathan Nagler, and Joshua A. Tucker."
-    version: " journal version"
+    version: "journal version"
     reference: "10.4 (2023)"
     subtitle: "Research & Politics"
     journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
@@ -22,9 +22,9 @@ pre_reviewed_papers:
     
   - title: "Estimating the effect of intergroup contact over years: Evidence from a youth program in Israel"
     authors: "Asimovic, Nejla, Ruth K. Ditlmann, and Cyrus Samii"
-    version: " journal version"
+    version: "journal version"
     reference: "(2022): 1-19."
-    subtitle: "Accepted, Political Science Research and Methods"
+    subtitle: "Political Science Research and Methods"
     journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
     abstract : "We study how an intervention combining youth intergroup contact and sports affects intergroup relations in the context of an active conflict. We first conduct a randomized controlled trial (RCT) of one-year program exposure in Israel. To track effects of a multiyear exposure, we then use machine-learning techniques to fuse the RCT with the observational data gathered on multiyear participants. This analytical approach can help overcome frequent limitations of RCTs, such as modest sample sizes and short observation periods. Our evidence cannot affirm a one-year effect on outgroup regard and ingroup regulation, although we estimate benefits of multiyear exposure among Jewish-Israeli youth, particularly boys. We discuss implications for interventions in contexts of active conflict and group status asymmetry.	"
 

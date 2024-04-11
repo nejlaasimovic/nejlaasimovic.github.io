@@ -2,7 +2,7 @@
 layout: research
 permalink: /research/
 pre_reviewed_papers:
-  - title: "Testing the Effects of Facebook Usage in an Ethnically Polarized Setting"
+  - title: "Testing the Effects of Facebook Usage in an Ethnically Polarized Setting."
     authors: "Asimovic, Nejla, Jonathan Nagler, Richard Bonneau, and Joshua A. Tucker."
     version: "journal version"
     pre-print : "pre-print"
@@ -12,7 +12,7 @@ pre_reviewed_papers:
     journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
     abstract : "Amid growing belief that social media exacerbates polarization, little is known about the causal effects of social media on ethnic outgroup attitudes. Through an experiment in Bosnia and Herzegovina where users refrained from Facebook usage during 1 wk of heightened identity salience, we find that—counter expectations—people who deactivated their accounts reported lower outgroup regard than the group that remained active, but this effect was likely conditional on the level of ethnic heterogeneity of respondents’ residence. Additionally, we replicate findings from a study on US users: Deactivation led to a decrease in news knowledge and suggestive improvements in subjective wellbeing. Our findings bring nuance to popular beliefs, frequently dichotomous and simplistic, of social media’s impact on societal dynamics."
 
-  - title: "Replicating the Effects of Facebook Deactivation in an Ethnically Polarized Setting"
+  - title: "Replicating the Effects of Facebook Deactivation in an Ethnically Polarized Setting."
     authors: "Asimovic, Nejla, Jonathan Nagler, and Joshua A. Tucker."
     version: "journal version"
     reference: "10.4 (2023)"
@@ -20,7 +20,7 @@ pre_reviewed_papers:
     journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
     abstract : "The question of how social media usage impacts societal polarization continues to generate great interest among both the research community and broader public. Nevertheless, there are still very few rigorous empirical studies of the causal impact of social media usage on polarization. To explore this question, we replicate the only published study to date that tests the effects of social media cessation on interethnic attitudes (Asimovic et al., 2021). In a study situated in Bosnia and Herzegovina, the authors found that deactivating from Facebook for a week around genocide commemoration in Bosnia and Herzegovina had a negative effect on users’ attitudes toward ethnic outgroups, with the negative effect driven by users with more ethnically homogenous offline networks. Does this finding extend to other settings? In a pre-registered replication study, we implement the same research design in a different ethnically polarized setting: Cyprus. We are not able to replicate the main effect found in Asimovic et al. (2021): in Cyprus, we cannot reject the null hypothesis of no effect. We do, however, find a significant interaction between the heterogeneity of users’ offline networks and the deactivation treatment within our 2021 subsample, consistent with the pattern from Bosnia and Herzegovina. We also find support for recent findings (Allcott et al., 2020; Asimovic et al., 2021) that Facebook deactivation leads to a reduction in anxiety levels and suggestive evidence of a reduction in knowledge of current news, though the latter is again limited to our 2021 subsample."
     
-  - title: "Estimating the effect of intergroup contact over years: Evidence from a youth program in Israel"
+  - title: "Estimating the effect of intergroup contact over years: Evidence from a youth program in Israel."
     authors: "Asimovic, Nejla, Ruth K. Ditlmann, and Cyrus Samii"
     version: "journal version"
     reference: "(2022): 1-19."

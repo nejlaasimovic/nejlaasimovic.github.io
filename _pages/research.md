@@ -4,7 +4,7 @@ permalink: /research/
 pre_reviewed_papers:
   - title: "Testing the Effects of Facebook Usage in an Ethnically Polarized Setting"
     authors: "Asimovic, Nejla, Jonathan Nagler, Richard Bonneau, and Joshua A. Tucker."
-    version: " journal version "
+    version: " journal version"
     pre-print : "pre-print"
     appendix : "appendix"
     reference: "118, no. 25 (2021)"

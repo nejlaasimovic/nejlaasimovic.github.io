@@ -28,13 +28,13 @@ layout: default
                 <hr>
                 
                 {% for research in page.pre_reviewed_papers %}
-                  <p class="sqsrte-large" style="margin: 0;">
+                  <p class="sqsrte-large" style="margin-bottom: 0;">
                     <span >{{research.authors}}</span>
                     <span style="font-weight: bold;">"{{research.title}}"</span>
                     <span style="font-style: italic;">{{research.subtitle}}</span>
                     <span>{{research.reference}}</span>
                   </p>
-                  <p>
+                  <p style="margin: 3px 0px;">
                     [<a
                       href="{{research.journal_url}}"
                       >{{research.version}}</a
@@ -74,7 +74,7 @@ layout: default
                 </h4>
                 <hr>
                 {% for work in page.work_in_progress %}
-                <p class="sqsrte-large" style="margin: 0;">
+                <p class="sqsrte-large" style="margin-bottom: 0;">
                   <span >{{work.authors}}</span>
                   <span style="font-weight: bold;">"{{work.title}}"</span>
                   <span style="font-style: italic;">{{work.status}}</span>
@@ -116,13 +116,13 @@ layout: default
                 
                 {% for writing in page.other_writing %}
                 
-                <p class="sqsrte-large" style="margin: 0;">
+                <p class="sqsrte-large" style="margin-bottom: 0;">
                   <span >{{writing.authors}}</span>
                   <span style="font-weight: bold;">"{{writing.title}}"</span>
                   <span style="font-style: italic;">{{writing.subtitle}}</span>
                 </p>
                 
-                <p>
+                <p style="margin: 3px 0px;">
                   [<a
                     href="{{writing.report_url}}"
                     >report</a

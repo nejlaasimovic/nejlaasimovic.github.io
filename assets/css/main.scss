@@ -84,3 +84,10 @@ html {
     width: calc(100% - #{$right-sidebar-width} - 30px);
   }
 }
+// Ensure italic text is properly displayed
+em, i {
+  font-style: italic;
+}
+
+
+

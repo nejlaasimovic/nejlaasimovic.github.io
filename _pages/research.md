@@ -2,16 +2,6 @@
 layout: research
 permalink: /research/
 pre_reviewed_papers:
-  - title: "Testing the Effects of Facebook Usage in an Ethnically Polarized Setting."
-    authors: "Asimovic, Nejla, Jonathan Nagler, Richard Bonneau, and Joshua A. Tucker."
-    version: "journal version"
-    pre-print : "pre-print"
-    appendix : "appendix"
-    reference: "118, no. 25 (2021)."
-    subtitle: "Proceedings of the National Academy of Sciences"
-    journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
-    abstract : "Amid growing belief that social media exacerbates polarization, little is known about the causal effects of social media on ethnic outgroup attitudes. Through an experiment in Bosnia and Herzegovina where users refrained from Facebook usage during 1 wk of heightened identity salience, we find that—counter expectations—people who deactivated their accounts reported lower outgroup regard than the group that remained active, but this effect was likely conditional on the level of ethnic heterogeneity of respondents’ residence. Additionally, we replicate findings from a study on US users: Deactivation led to a decrease in news knowledge and suggestive improvements in subjective wellbeing. Our findings bring nuance to popular beliefs, frequently dichotomous and simplistic, of social media’s impact on societal dynamics."
-
   - title: "Replicating the Effects of Facebook Deactivation in an Ethnically Polarized Setting."
     authors: "Asimovic, Nejla, Jonathan Nagler, and Joshua A. Tucker."
     version: "journal version"
@@ -28,7 +18,16 @@ pre_reviewed_papers:
     journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
     abstract : "We study how an intervention combining youth intergroup contact and sports affects intergroup relations in the context of an active conflict. We first conduct a randomized controlled trial (RCT) of one-year program exposure in Israel. To track effects of a multiyear exposure, we then use machine-learning techniques to fuse the RCT with the observational data gathered on multiyear participants. This analytical approach can help overcome frequent limitations of RCTs, such as modest sample sizes and short observation periods. Our evidence cannot affirm a one-year effect on outgroup regard and ingroup regulation, although we estimate benefits of multiyear exposure among Jewish-Israeli youth, particularly boys. We discuss implications for interventions in contexts of active conflict and group status asymmetry.	"
 
-
+  - title: "Testing the Effects of Facebook Usage in an Ethnically Polarized Setting."
+    authors: "Asimovic, Nejla, Jonathan Nagler, Richard Bonneau, and Joshua A. Tucker."
+    version: "journal version"
+    pre-print : "pre-print"
+    appendix : "appendix"
+    reference: "118, no. 25 (2021)."
+    subtitle: "Proceedings of the National Academy of Sciences"
+    journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
+    abstract : "Amid growing belief that social media exacerbates polarization, little is known about the causal effects of social media on ethnic outgroup attitudes. Through an experiment in Bosnia and Herzegovina where users refrained from Facebook usage during 1 wk of heightened identity salience, we find that—counter expectations—people who deactivated their accounts reported lower outgroup regard than the group that remained active, but this effect was likely conditional on the level of ethnic heterogeneity of respondents’ residence. Additionally, we replicate findings from a study on US users: Deactivation led to a decrease in news knowledge and suggestive improvements in subjective wellbeing. Our findings bring nuance to popular beliefs, frequently dichotomous and simplistic, of social media’s impact on societal dynamics."
+    
 work_in_progress:
   - title: "Unlocking Outgroup Access Online: Evidence From Cyprus."
     authors: "Asimovic, Nejla."

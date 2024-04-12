@@ -4,7 +4,7 @@ permalink: /research/
 pre_reviewed_papers:
 
   - title: "Estimating the effect of intergroup contact over years: Evidence from a youth program in Israel."
-    authors: "Asimovic, Nejla, Ruth K. Ditlmann, and Cyrus Samii"
+    authors: "Asimovic, Nejla, Ruth K. Ditlmann, and Cyrus Samii."
     version: "journal version"
     reference: "(2024)."
     subtitle: "Political Science Research and Methods"

@@ -2,6 +2,15 @@
 layout: research
 permalink: /research/
 pre_reviewed_papers:
+
+  - title: "Estimating the effect of intergroup contact over years: Evidence from a youth program in Israel."
+    authors: "Asimovic, Nejla, Ruth K. Ditlmann, and Cyrus Samii"
+    version: "journal version"
+    reference: "(2024)."
+    subtitle: "Political Science Research and Methods"
+    journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
+    abstract : "We study how an intervention combining youth intergroup contact and sports affects intergroup relations in the context of an active conflict. We first conduct a randomized controlled trial (RCT) of one-year program exposure in Israel. To track effects of a multiyear exposure, we then use machine-learning techniques to fuse the RCT with the observational data gathered on multiyear participants. This analytical approach can help overcome frequent limitations of RCTs, such as modest sample sizes and short observation periods. Our evidence cannot affirm a one-year effect on outgroup regard and ingroup regulation, although we estimate benefits of multiyear exposure among Jewish-Israeli youth, particularly boys. We discuss implications for interventions in contexts of active conflict and group status asymmetry.	"
+    
   - title: "Replicating the Effects of Facebook Deactivation in an Ethnically Polarized Setting."
     authors: "Asimovic, Nejla, Jonathan Nagler, and Joshua A. Tucker."
     version: "journal version"
@@ -10,13 +19,6 @@ pre_reviewed_papers:
     journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
     abstract : "The question of how social media usage impacts societal polarization continues to generate great interest among both the research community and broader public. Nevertheless, there are still very few rigorous empirical studies of the causal impact of social media usage on polarization. To explore this question, we replicate the only published study to date that tests the effects of social media cessation on interethnic attitudes (Asimovic et al., 2021). In a study situated in Bosnia and Herzegovina, the authors found that deactivating from Facebook for a week around genocide commemoration in Bosnia and Herzegovina had a negative effect on users’ attitudes toward ethnic outgroups, with the negative effect driven by users with more ethnically homogenous offline networks. Does this finding extend to other settings? In a pre-registered replication study, we implement the same research design in a different ethnically polarized setting: Cyprus. We are not able to replicate the main effect found in Asimovic et al. (2021): in Cyprus, we cannot reject the null hypothesis of no effect. We do, however, find a significant interaction between the heterogeneity of users’ offline networks and the deactivation treatment within our 2021 subsample, consistent with the pattern from Bosnia and Herzegovina. We also find support for recent findings (Allcott et al., 2020; Asimovic et al., 2021) that Facebook deactivation leads to a reduction in anxiety levels and suggestive evidence of a reduction in knowledge of current news, though the latter is again limited to our 2021 subsample."
     
-  - title: "Estimating the effect of intergroup contact over years: Evidence from a youth program in Israel."
-    authors: "Asimovic, Nejla, Ruth K. Ditlmann, and Cyrus Samii"
-    version: "journal version"
-    reference: "(2024)."
-    subtitle: "Political Science Research and Methods"
-    journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
-    abstract : "We study how an intervention combining youth intergroup contact and sports affects intergroup relations in the context of an active conflict. We first conduct a randomized controlled trial (RCT) of one-year program exposure in Israel. To track effects of a multiyear exposure, we then use machine-learning techniques to fuse the RCT with the observational data gathered on multiyear participants. This analytical approach can help overcome frequent limitations of RCTs, such as modest sample sizes and short observation periods. Our evidence cannot affirm a one-year effect on outgroup regard and ingroup regulation, although we estimate benefits of multiyear exposure among Jewish-Israeli youth, particularly boys. We discuss implications for interventions in contexts of active conflict and group status asymmetry.	"
 
   - title: "Testing the Effects of Facebook Usage in an Ethnically Polarized Setting."
     authors: "Asimovic, Nejla, Jonathan Nagler, Richard Bonneau, and Joshua A. Tucker."

@@ -7,6 +7,11 @@
   float: right;
   width: calc(100% - #{$right-sidebar-width} - 30px);
   padding-right: 0;
+  div{
+    p{
+      margin-top: 0;
+    }
+  }
 
   @include breakpoint($large) {
     padding-right: 0;

@@ -7,5 +7,5 @@ Welcome! I am a Postdoctoral Fellow at the University of Pennsylvania (Institute
 
 My research examines the interplay between digital technologies and intergroup relations within deeply divided societies globally. My work has been published in the *Proceedings of the National Academy of Sciences*, <em>Research & Politics</em>, and <em>Political Science Research & Methods</em>. I was formerly a recipient of <em>the United States Institute of Peace-Minerva fellowship</em>, <em>the 2022 Meta PhD Research fellowship</em>, and <em>the National Science Foundation Dissertation Improvement fellowship</em>.
 
-I hold a Ph.D. in Political Science from New York University and a B.A. (Summa Cum Laude; Phi Beta Kappa) in World Politics with minors in Mathematics and Hispanic Studies from Hamilton College. Apart from my research, I enjoy competitive ballroom dancing and refining my chocolate tasting skills.
+I hold a Ph.D. in Political Science from New York University and a B.A. (Summa Cum Laude; Phi Beta Kappa) in World Politics with minors in Mathematics and Hispanic Studies from Hamilton College. Apart from my research, I enjoy competitive ballroom dancing, exploring my home country of Bosnia and Herzegovina, and refining my chocolate tasting skills.
 

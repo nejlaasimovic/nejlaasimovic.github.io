@@ -8,7 +8,7 @@ pre_reviewed_papers:
     version: "journal version"
     reference: "(2024)."
     subtitle: "Political Science Research and Methods"
-    journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
+    journal_url: "https://www.cambridge.org/core/journals/political-science-research-and-methods/article/estimating-the-effect-of-intergroup-contact-over-years-evidence-from-a-youth-program-in-israel/CE7A69DC57CBCFA96F6A4FE5501015A2"
     abstract : "We study how an intervention combining youth intergroup contact and sports affects intergroup relations in the context of an active conflict. We first conduct a randomized controlled trial (RCT) of one-year program exposure in Israel. To track effects of a multiyear exposure, we then use machine-learning techniques to fuse the RCT with the observational data gathered on multiyear participants. This analytical approach can help overcome frequent limitations of RCTs, such as modest sample sizes and short observation periods. Our evidence cannot affirm a one-year effect on outgroup regard and ingroup regulation, although we estimate benefits of multiyear exposure among Jewish-Israeli youth, particularly boys. We discuss implications for interventions in contexts of active conflict and group status asymmetry.	"
     
   - title: "Replicating the Effects of Facebook Deactivation in an Ethnically Polarized Setting."
@@ -16,7 +16,7 @@ pre_reviewed_papers:
     version: "journal version"
     reference: "10, no. 4 (2023)."
     subtitle: "Research & Politics"
-    journal_url: "https://www.pnas.org/doi/10.1073/pnas.2022819118"
+    journal_url: "https://journals.sagepub.com/doi/10.1177/20531680231205157#"
     abstract : "The question of how social media usage impacts societal polarization continues to generate great interest among both the research community and broader public. Nevertheless, there are still very few rigorous empirical studies of the causal impact of social media usage on polarization. To explore this question, we replicate the only published study to date that tests the effects of social media cessation on interethnic attitudes (Asimovic et al., 2021). In a study situated in Bosnia and Herzegovina, the authors found that deactivating from Facebook for a week around genocide commemoration in Bosnia and Herzegovina had a negative effect on users’ attitudes toward ethnic outgroups, with the negative effect driven by users with more ethnically homogenous offline networks. Does this finding extend to other settings? In a pre-registered replication study, we implement the same research design in a different ethnically polarized setting: Cyprus. We are not able to replicate the main effect found in Asimovic et al. (2021): in Cyprus, we cannot reject the null hypothesis of no effect. We do, however, find a significant interaction between the heterogeneity of users’ offline networks and the deactivation treatment within our 2021 subsample, consistent with the pattern from Bosnia and Herzegovina. We also find support for recent findings (Allcott et al., 2020; Asimovic et al., 2021) that Facebook deactivation leads to a reduction in anxiety levels and suggestive evidence of a reduction in knowledge of current news, though the latter is again limited to our 2021 subsample."
     
 

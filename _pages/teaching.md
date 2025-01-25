@@ -2,8 +2,9 @@
 layout: teaching
 permalink: /teaching/
 teaching:
--   - title: "Text As Data: Computational Linguistics (Spring 2025)"
 
+  - title: "Text As Data: Computational Linguistics (Spring 2025) "
+    
     margin_top: "77"
   - title: "Social Media and Political Behavior (Spring 2025) "
     

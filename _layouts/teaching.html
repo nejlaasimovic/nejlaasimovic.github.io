@@ -8,15 +8,13 @@ layout: default
         data-border-radii="{&quot;topLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;topRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomLeft&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0},&quot;bottomRight&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0}}"
         id="block-16578cd387fa7453dcfc">
         <div class="sqs-block-content" style="margin-left: 17%;">
+
+            <!-- Georgetown Section -->
+            <p style="font-size: 28px; font-weight: bold;">McCourt School, Georgetown University</p>
+            <hr style="margin: auto;">
+            
             {% for assistant in page.teaching %}
                 {% if forloop.index <= 2 %}
-                    <p style="font-size: 28px; font-weight: bold;">McCourt School, Georgetown University</p>
-                {% else %}
-                    <p style="font-size: 28px; font-weight: bold;">New York University</p>
-                {% endif %}
-                
-                <hr style="margin: auto;">
-
                 <div>
                     <p style="white-space: pre-wrap; font-weight: bold; margin-bottom: 0;">{{ assistant.title }}</p>
                     
@@ -30,7 +28,31 @@ layout: default
                     </p>
                     {% endif %}
                 </div>
+                {% endif %}
             {% endfor %}
+
+            <!-- New York University Section -->
+            <p style="font-size: 28px; font-weight: bold; margin-top: 30px;">New York University</p>
+            <hr style="margin: auto;">
+            
+            {% for assistant in page.teaching %}
+                {% if forloop.index > 2 %}
+                <div>
+                    <p style="white-space: pre-wrap; font-weight: bold; margin-bottom: 0;">{{ assistant.title }}</p>
+                    
+                    {% if assistant.subtitle %}
+                    <p style="font-size: 17px; margin: 3px 0px;">{{ assistant.subtitle }}</p>
+                    {% endif %}
+                    
+                    {% if assistant.url %}
+                    <p style="font-size: 17px; margin: 3px 0px;">
+                        [<a href="/s/asimovic-teaching-evaluations.pdf" style="color: #0300FF;">{{ assistant.url }}</a>]
+                    </p>
+                    {% endif %}
+                </div>
+                {% endif %}
+            {% endfor %}
+            
         </div>
     </div>
 </div>

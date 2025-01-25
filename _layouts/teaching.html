@@ -14,14 +14,14 @@ layout: default
             {% for assistant in page.teaching %}
                 {% if forloop.index <= 2 %}
                 <div style="margin-bottom: 15px;">
-                    <p style="white-space: pre-wrap; font-weight: bold; margin-bottom: 5px;">{{ assistant.title }}</p>
+                    <p style="white-space: pre-wrap; font-size: 20px; font-weight: bold; margin-bottom: 5px;">{{ assistant.title }}</p>
                     
                     {% if assistant.subtitle %}
-                    <p style="font-size: 17px; margin: 0;">{{ assistant.subtitle }}</p>
+                    <p style="font-size: 16px; margin: 0; color: #555;">{{ assistant.subtitle }}</p>
                     {% endif %}
                     
                     {% if assistant.url %}
-                    <p style="font-size: 17px; margin: 5px 0;">
+                    <p style="font-size: 16px; margin: 5px 0;">
                         [<a href="/s/asimovic-teaching-evaluations.pdf" style="color: #0300FF; text-decoration: none;">{{ assistant.url }}</a>]
                     </p>
                     {% endif %}
@@ -36,14 +36,14 @@ layout: default
             {% for assistant in page.teaching %}
                 {% if forloop.index > 2 %}
                 <div style="margin-bottom: 15px;">
-                    <p style="white-space: pre-wrap; font-weight: bold; margin-bottom: 5px;">{{ assistant.title }}</p>
+                    <p style="white-space: pre-wrap; font-size: 20px; font-weight: bold; margin-bottom: 5px;">{{ assistant.title }}</p>
                     
                     {% if assistant.subtitle %}
-                    <p style="font-size: 17px; margin: 0;">{{ assistant.subtitle }}</p>
+                    <p style="font-size: 16px; margin: 0; color: #555;">{{ assistant.subtitle }}</p>
                     {% endif %}
                     
                     {% if assistant.url %}
-                    <p style="font-size: 17px; margin: 5px 0;">
+                    <p style="font-size: 16px; margin: 5px 0;">
                         [<a href="/s/asimovic-teaching-evaluations.pdf" style="color: #0300FF; text-decoration: none;">{{ assistant.url }}</a>]
                     </p>
                     {% endif %}
@@ -54,3 +54,4 @@ layout: default
         </div>
     </div>
 </div>
+

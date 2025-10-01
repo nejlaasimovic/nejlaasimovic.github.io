@@ -62,7 +62,7 @@ _styles: |
   </div>
   <div class="teaching-meta">
     <i class="fas fa-calendar-alt"></i>
-    <span>Upcoming Course - Spring 2025</span>
+    <span>Upcoming Course - NA</span>
   </div>
 </div>
 

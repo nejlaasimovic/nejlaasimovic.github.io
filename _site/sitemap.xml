@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/cv/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/research/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/teaching/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdf/PUB_Bosnia21_Paper-Critical-Media-Literacy.pdf</loc>
+<lastmod>2025-09-27T21:59:22-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdf/Social+Media+Data+in+Conflict+Research.pdf</loc>
+<lastmod>2025-09-27T21:59:22-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdf/asimovic_cv.pdf</loc>
+<lastmod>2025-09-27T17:16:17-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/plotly/demo.html</loc>
+<lastmod>2025-09-23T20:16:02-04:00</lastmod>
+</url>
+</urlset>

@@ -1,0 +1,104 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    <!-- Pre-reviewed Papers Section -->
+    {% if page.pre_reviewed_papers %}
+      <h2>Published Papers</h2>
+      <hr style="margin-bottom: 2rem; border-color: var(--global-divider-color);">
+      {% for paper in page.pre_reviewed_papers %}
+        <div class="publication-item" style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+          <h4 style="color: var(--global-theme-color); margin-bottom: 0.5rem; font-size: 1.25rem;">
+            <a href="{{ paper.journal_url }}" target="_blank" style="color: inherit; text-decoration: none;">
+              {{ paper.title }}
+            </a>
+          </h4>
+          <p style="margin-bottom: 0.5rem;"><strong>{{ paper.authors }}</strong></p>
+          <p style="margin-bottom: 0.5rem; color: var(--global-text-color-light);">
+            <em>{{ paper.subtitle }}</em> {{ paper.reference }}
+          </p>
+          {% if paper.abstract %}
+            <details style="margin-top: 1rem;">
+              <summary style="cursor: pointer; font-weight: bold; color: var(--global-theme-color);">Abstract</summary>
+              <p style="margin-top: 0.5rem; text-align: justify;">{{ paper.abstract }}</p>
+            </details>
+          {% endif %}
+          <div style="margin-top: 0.5rem;">
+            {% if paper.journal_url %}
+              <a href="{{ paper.journal_url }}" target="_blank" style="color: var(--global-theme-color); text-decoration: none; margin-right: 1rem;">
+                <i class="fas fa-external-link-alt"></i> Journal Link
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    <!-- Work in Progress Section -->
+    {% if page.work_in_progress %}
+      <h2 style="margin-top: 3rem;">Work in Progress</h2>
+      <hr style="margin-bottom: 2rem; border-color: var(--global-divider-color);">
+      {% for paper in page.work_in_progress %}
+        <div class="publication-item" style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+          <h4 style="color: var(--global-theme-color); margin-bottom: 0.5rem; font-size: 1.25rem;">{{ paper.title }}</h4>
+          <p style="margin-bottom: 0.5rem;"><strong>{{ paper.authors }}</strong></p>
+          {% if paper.status %}
+            <p style="margin-bottom: 0.5rem; color: var(--global-theme-color); font-weight: bold;">
+              {{ paper.status }}
+            </p>
+          {% endif %}
+          {% if paper.abstract %}
+            <details style="margin-top: 1rem;">
+              <summary style="cursor: pointer; font-weight: bold; color: var(--global-theme-color);">Abstract</summary>
+              <p style="margin-top: 0.5rem; text-align: justify;">{{ paper.abstract }}</p>
+            </details>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    <!-- Other Writing Section -->
+    {% if page.other_writing %}
+      <h2 style="margin-top: 3rem;">Other Writing</h2>
+      <hr style="margin-bottom: 2rem; border-color: var(--global-divider-color);">
+      {% for paper in page.other_writing %}
+        <div class="publication-item" style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+          <h4 style="color: var(--global-theme-color); margin-bottom: 0.5rem; font-size: 1.25rem;">{{ paper.title }}</h4>
+          <p style="margin-bottom: 0.5rem;"><strong>{{ paper.authors }}</strong></p>
+          {% if paper.subtitle %}
+            <p style="margin-bottom: 0.5rem; color: var(--global-text-color-light);">
+              <em>{{ paper.subtitle }}</em>
+            </p>
+          {% endif %}
+          {% if paper.report_url %}
+            <div style="margin-top: 0.5rem;">
+              <a href="{{ paper.report_url }}" target="_blank" style="color: var(--global-theme-color); text-decoration: none;">
+                <i class="fas fa-file-pdf"></i> Download Report
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    {{ content }}
+  </article>
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>
+

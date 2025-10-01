@@ -1,0 +1,88 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    <!-- Teaching Courses Section -->
+    {% if page.teaching %}
+      <div class="teaching-container">
+        {% for course in page.teaching %}
+          <div class="teaching-item card" style="margin-bottom: 2.5rem; padding: 2rem; border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: white;">
+            
+            <!-- Course Title -->
+            <h3 style="color: var(--global-theme-color); margin-bottom: 1rem; font-size: 1.4rem; font-weight: 600;">
+              {{ course.title }}
+            </h3>
+            
+            <!-- Course Subtitle/Role -->
+            {% if course.subtitle %}
+              <div style="margin-bottom: 1.5rem;">
+                <span style="background: var(--global-theme-color); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">
+                  {{ course.subtitle }}
+                </span>
+              </div>
+            {% endif %}
+            
+            <!-- Course Description -->
+            {% if course.description %}
+              <div style="text-align: justify; line-height: 1.7; color: #333; font-size: 1rem;">
+                {{ course.description | markdownify }}
+              </div>
+            {% endif %}
+            
+            <!-- Course Metadata -->
+            {% if course.title contains "Spring 2025" %}
+              <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #f0f0f0;">
+                <div style="display: flex; align-items: center; color: var(--global-text-color-light); font-size: 0.9rem;">
+                  <i class="fas fa-calendar-alt" style="margin-right: 0.5rem; color: var(--global-theme-color);"></i>
+                  <span>Upcoming Course - Spring 2025</span>
+                </div>
+              </div>
+            {% endif %}
+            
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {{ content }}
+  </article>
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>
+
+<style>
+.teaching-container {
+  max-width: 100%;
+}
+
+.teaching-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .teaching-item {
+    padding: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .teaching-item h3 {
+    font-size: 1.2rem !important;
+  }
+}
+</style>

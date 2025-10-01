@@ -1,0 +1,331 @@
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+
+title: "blank"
+first_name: "Nejla"
+middle_name: ""
+last_name: "Asimovic"
+email: nejla.asimovic@georgetown.edu
+description: > 
+  Assistant Professor in Computational Social Science at Georgetown University’s McCourt School of Public Policy. 
+  Research on digital technologies, intergroup relations, and divided societies.
+
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. 
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+keywords: political science, computational social science, digital technology, intergroup relations, academic website
+lang: en
+icon: /assets/img/favicon.png
+
+url: "https://nejlaasimovic.github.io"
+baseurl: "" # must be empty for personal site
+
+last_updated: false
+back_to_top: true
+jupyter:
+  enabled: false
+imagemagick:
+  enabled: false
+
+
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
+
+repo_theme_light: default
+repo_theme_dark: dark
+repo_trophies:
+  enabled: true
+  theme_light: flat
+  theme_dark: gitdimmed
+
+# -----------------------------------------------------------------------------
+# RSS Feed
+# -----------------------------------------------------------------------------
+rss_icon: true
+
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+navbar_fixed: true
+footer_fixed: true
+search_enabled: true
+socials_in_search: true
+bib_search: true
+max_width: 930px
+
+# -----------------------------------------------------------------------------
+# Open Graph & Schema.org
+# -----------------------------------------------------------------------------
+serve_og_meta: false
+serve_schema_org: false
+og_image:
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+acm_id:
+blogger_url:
+bluesky_url:
+dblp_url:
+discord_id:
+facebook_id:
+flickr_id:
+github_username: nejlaasimovic
+gitlab_username:
+ieee_id:
+inspirehep_id:
+instagram_id:
+kaggle_id:
+keybase_username:
+lastfm_id:
+lattes_id:
+linkedin_username: nejla-asimovic
+mastodon_username:
+medium_username:
+orcid_id:
+osf_id:
+pinterest_id:
+publons_id:
+quora_username:
+research_gate_profile:
+scholar_userid: ""   # disable live scraping
+scopus_id:
+semanticscholar_id:
+spotify_id:
+stackoverflow_id:
+telegram_username:
+unsplash_id:
+wechat_qr:
+whatsapp_number:
+wikidata_id:
+wikipedia_id:
+work_url:
+x_username:
+youtube_id:
+zotero_username:
+
+contact_note: >
+  Best way to reach me is via email.
+
+# -----------------------------------------------------------------------------
+# Analytics
+# -----------------------------------------------------------------------------
+google_analytics:
+cronitor_analytics:
+pirsch_analytics:
+google_site_verification:
+bing_site_verification:
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+blog_name: "Research Blog"
+blog_description: reflections, updates, and publications
+permalink: /blog/:year/:title/
+lsi: false
+
+pagination:
+  enabled: true
+
+related_blog_posts:
+  enabled: true
+  max_related: 5
+
+giscus:
+  repo:
+  repo_id:
+  category: Comments
+  category_id:
+  mapping: title
+  strict: 1
+  reactions_enabled: 1
+  input_position: bottom
+  theme: preferred_color_scheme
+  emit_metadata: 0
+  lang: en
+
+disqus_shortname:
+
+external_sources: [] # disable demo Medium/Google blog
+
+# -----------------------------------------------------------------------------
+# Newsletter
+# -----------------------------------------------------------------------------
+newsletter:
+  enabled: false
+  endpoint:
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /:collection/:title/
+  projects:
+    output: true
+    permalink: /:collection/:title/
+
+announcements:
+  enabled: true
+  scrollable: true
+  limit: 5
+
+latest_posts:
+  enabled: false
+  scrollable: false
+  limit: 3
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+include: ["_pages"]
+exclude:
+  - bin/
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - Dockerfile
+  - docker-compose.yml
+  - docker-compose-slim.yml
+  - FAQ.md
+  - Gemfile
+  - Gemfile.lock
+  - INSTALL.md
+  - LICENSE
+  - lighthouse_results/
+  - package.json
+  - package-lock.json
+  - purgecss.config.js
+  - README.md
+  - readme_preview/
+  - vendor
+
+keep_files:
+  - CNAME
+  - .nojekyll
+
+plugins:
+  - jekyll-archives
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-regex-replace
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-tabs
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
+
+# -----------------------------------------------------------------------------
+# Jekyll Minifier
+# -----------------------------------------------------------------------------
+jekyll-minifier:
+  exclude:
+    - "*.js"
+    - "assets/js/search/*.js"
+    - "assets/libs/**/*"
+  uglifier_args:
+    harmony: true
+
+
+# -----------------------------------------------------------------------------
+# Scholar
+# -----------------------------------------------------------------------------
+# scholar:  # DISABLED - using custom research layout instead
+#   last_name: [Asimovic]
+#   first_name: [Nejla]
+#   style: apa
+#   locale: en
+#   source: /_bibliography/
+#   bibliography: papers.bib
+#   bibliography_template: bib
+#   citation: false
+#   scholar_id: ""   # disable live fetching
+#   bibtex_filters: [latex, smallcaps, superscript]
+#   replace_strings: true
+#   join_strings: true
+#   details_dir: bibliography
+#   details_link: Details
+#   query: "@*"
+#   group_by: year
+#   group_order: descending
+
+enable_publication_badges:
+  altmetric: true
+  dimensions: true
+  google_scholar: true
+  inspirehep: true
+
+filtered_bibtex_keywords:
+  [abbr, abstract, additional_info, altmetric, annotation, arxiv, award, award_name,
+   bibtex_show, blog, code, google_scholar_id, html, inspirehep_id, pdf, poster,
+   preview, selected, slides, supp, video, website]
+
+max_author_limit: 3
+more_authors_animation_delay: 10
+enable_publication_thumbnails: true
+
+# -----------------------------------------------------------------------------
+# Responsive images
+# -----------------------------------------------------------------------------
+imagemagick:
+  enabled: false
+  widths: [480, 800, 1400]
+  input_directories: [assets/img/]
+  input_formats: [".jpg", ".jpeg", ".png", ".tiff", ".gif"]
+  output_formats:
+    webp: "-quality 85"
+
+lazy_loading_images: true
+
+# -----------------------------------------------------------------------------
+# Optional features
+# -----------------------------------------------------------------------------
+enable_google_analytics: false
+enable_cronitor_analytics: false
+enable_pirsch_analytics: false
+enable_google_verification: false
+enable_bing_verification: false
+enable_masonry: true
+enable_math: true
+enable_tooltips: false
+enable_darkmode: true
+enable_navbar_social: false
+enable_project_categories: true
+enable_medium_zoom: true
+enable_progressbar: true
+enable_video_embedding: false
+
+# -----------------------------------------------------------------------------
+# Library versions
+# -----------------------------------------------------------------------------
+
+third_party_libraries:
+  download: false
+  google_fonts:
+    url:
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+

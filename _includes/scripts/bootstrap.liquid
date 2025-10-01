@@ -6,3 +6,40 @@
   integrity="{{ site.third_party_libraries.mdb.integrity.js }}"
   crossorigin="anonymous"
 ></script>
+
+<!-- Mobile menu debugging and fix -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Ensure mobile menu works on all devices
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('#navbarNav');
+  
+  if (navbarToggler && navbarCollapse) {
+    // Add click event listener as backup
+    navbarToggler.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Toggle the collapse class
+      if (navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show');
+        navbarToggler.classList.add('collapsed');
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      } else {
+        navbarCollapse.classList.add('show');
+        navbarToggler.classList.remove('collapsed');
+        navbarToggler.setAttribute('aria-expanded', 'true');
+      }
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!navbarToggler.contains(e.target) && !navbarCollapse.contains(e.target)) {
+        navbarCollapse.classList.remove('show');
+        navbarToggler.classList.add('collapsed');
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+});
+</script>

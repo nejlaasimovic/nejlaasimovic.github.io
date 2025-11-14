@@ -22,14 +22,23 @@ layout: default
       {% for paper in page.pre_reviewed_papers %}
         <div class="publication-item" style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
           <h4 style="color: var(--global-theme-color); margin-bottom: 0.5rem; font-size: 1.25rem;">
-            <a href="{{ paper.journal_url }}" target="_blank" style="color: inherit; text-decoration: none;">
+            {% if paper.journal_url %}
+              <a href="{{ paper.journal_url }}" target="_blank" style="color: inherit; text-decoration: none;">
+                {{ paper.title }}
+              </a>
+            {% else %}
               {{ paper.title }}
-            </a>
+            {% endif %}
           </h4>
           <p style="margin-bottom: 0.5rem;"><strong>{{ paper.authors }}</strong></p>
           <p style="margin-bottom: 0.5rem; color: var(--global-text-color-light);">
             <em>{{ paper.subtitle }}</em> {{ paper.reference }}
           </p>
+          {% if paper.status %}
+            <p style="margin-bottom: 0.5rem; color: var(--global-theme-color); font-weight: bold;">
+              {{ paper.status }}
+            </p>
+          {% endif %}
           {% if paper.abstract %}
             <details style="margin-top: 1rem;">
               <summary style="cursor: pointer; font-weight: bold; color: var(--global-theme-color);">Abstract</summary>

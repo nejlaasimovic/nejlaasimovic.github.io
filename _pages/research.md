@@ -14,7 +14,7 @@ pre_reviewed_papers:
     status: "Stage 1 In-Principle Acceptance of Registered Report"
     abstract : "With nearly five billion people globally active on social media platforms, an ongoing debate surrounds its influence on group relations and well-being. However, existing studies often rely on correlational approaches or predominantly focus on samples from the United States or Western Europe. In response to these limitations, we propose a comprehensive global field experiment involving more than 20 countries. In this extensive international collaboration, half of the participants will be randomly assigned to reduce their social media usage (Facebook, X, TikTok, YouTube, and Instagram) for two weeks. Our study aims to empirically test several pre-specified hypotheses concerning the causal impact of social media reduction on intergroup attitudes, well-being, and news knowledge. The global nature of this endeavor will enable us to explore variations in the effects of social media reduction across different world regions, with the intention of advancing the current dichotomous debate on the effects of social media to an examination of conditions under which specific social media effects can be observed. We hope that the outcomes of this global experiment may offer valuable insights into the ongoing debates surrounding the impact of social media on individuals across diverse cultural and political contexts."
 
-      - title: "Unlocking Outgroup Access Online: Evidence From Cyprus"
+  - title: "Unlocking Outgroup Access Online: Evidence From Cyprus"
     authors: "Asimovic, Nejla"
     version: "journal version"
     reference: "(2025)"

@@ -70,7 +70,7 @@ work_in_progress:
   - title: "Bridging the Digital Divide: Data Access and Integration of Venezuelan Migrants in Colombia"
     authors: "Asimovic, Nejla, Mateo Vásquez-Cortés, and Kevin Munger"
     status: "Conditionally Accepted, Quarterly Journal of Political Science"
-    paper_url: "/assets/pdf/bridging_digital_divide.pdf"
+    paper_url: "/assets/pdf/Bridging_the_Digital_Divide.pdf"
     abstract: "Unprecedented migration flows necessitate strategies for integrating migrants into host societies' public systems. In a rapidly digitized world, limited internet access and information amplify gaps in government service uptake. We developed an intervention aimed at closing these gaps, based on our theoretical expectations about the untapped power of activating ad hoc migrant networks. In collaboration with an NGO and a Colombian government department, we focused on Venezuelan migrants in Colombia with limited internet access, providing them with unlimited mobile data for a month and messages about public benefits, either individually or in groups. These two interventions led to significant increases in knowledge of public benefits and levels of validated enrollment in the public service portal, but limited increases in other integration outcomes. This study illustrates the potential of using WhatsApp to activate networks and assist migrants in navigating resources within the host society, while also revealing the challenges in achieving broader integration outcomes."
 
   - title: "Counter-Narratives in the Information Environment: Evidence on Migration Attitudes in Colombia"

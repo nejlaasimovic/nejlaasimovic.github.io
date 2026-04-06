@@ -45,13 +45,22 @@ layout: default
               <p style="margin-top: 0.5rem; text-align: justify;">{{ paper.abstract }}</p>
             </details>
           {% endif %}
-          <div style="margin-top: 0.5rem;">
-            {% if paper.journal_url %}
-              <a href="{{ paper.journal_url }}" target="_blank" style="color: var(--global-theme-color); text-decoration: none; margin-right: 1rem;">
-                <i class="fas fa-external-link-alt"></i> Journal Link
-              </a>
-            {% endif %}
-          </div>
+          {% if paper.journal_url or paper.paper_url %}
+            <div style="margin-top: 0.75rem; display: inline-flex; gap: 0.5rem; flex-wrap: wrap;">
+              {% if paper.journal_url %}
+                <a href="{{ paper.journal_url }}" target="_blank"
+                   style="display: inline-block; border: 1px solid var(--global-theme-color); border-radius: 4px; padding: 2px 10px; font-size: 0.78em; color: var(--global-theme-color); text-decoration: none; font-weight: 500;">
+                  journal
+                </a>
+              {% endif %}
+              {% if paper.paper_url %}
+                <a href="{{ paper.paper_url }}" target="_blank"
+                   style="display: inline-block; border: 1px solid var(--global-theme-color); border-radius: 4px; padding: 2px 10px; font-size: 0.78em; color: var(--global-theme-color); text-decoration: none; font-weight: 500;">
+                  paper
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
         </div>
       {% endfor %}
     {% endif %}
@@ -69,11 +78,19 @@ layout: default
               {{ paper.status }}
             </p>
           {% endif %}
-          {% if paper.abstract %}
+          {% if paper.abstract and paper.abstract != "" %}
             <details style="margin-top: 1rem;">
               <summary style="cursor: pointer; font-weight: bold; color: var(--global-theme-color);">Abstract</summary>
               <p style="margin-top: 0.5rem; text-align: justify;">{{ paper.abstract }}</p>
             </details>
+          {% endif %}
+          {% if paper.paper_url %}
+            <div style="margin-top: 0.75rem;">
+              <a href="{{ paper.paper_url }}" target="_blank"
+                 style="display: inline-block; border: 1px solid var(--global-theme-color); border-radius: 4px; padding: 2px 10px; font-size: 0.78em; color: var(--global-theme-color); text-decoration: none; font-weight: 500;">
+                paper
+              </a>
+            </div>
           {% endif %}
         </div>
       {% endfor %}

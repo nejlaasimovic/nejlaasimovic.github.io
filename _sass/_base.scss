@@ -1345,3 +1345,21 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+// Paper/Journal link buttons (research page)
+.paper-btn {
+  display: inline-block;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 4px;
+  padding: 2px 10px;
+  font-size: 0.78em;
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: var(--global-theme-color);
+  }
+}

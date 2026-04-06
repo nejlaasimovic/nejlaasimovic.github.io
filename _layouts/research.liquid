@@ -48,16 +48,10 @@ layout: default
           {% if paper.journal_url or paper.paper_url %}
             <div style="margin-top: 0.75rem; display: inline-flex; gap: 0.5rem; flex-wrap: wrap;">
               {% if paper.journal_url %}
-                <a href="{{ paper.journal_url }}" target="_blank"
-                   style="display: inline-block; border: 1px solid var(--global-theme-color); border-radius: 4px; padding: 2px 10px; font-size: 0.78em; color: var(--global-theme-color); text-decoration: none; font-weight: 500;">
-                  journal
-                </a>
+                <a href="{{ paper.journal_url }}" target="_blank" class="paper-btn">journal</a>
               {% endif %}
               {% if paper.paper_url %}
-                <a href="{{ paper.paper_url }}" target="_blank"
-                   style="display: inline-block; border: 1px solid var(--global-theme-color); border-radius: 4px; padding: 2px 10px; font-size: 0.78em; color: var(--global-theme-color); text-decoration: none; font-weight: 500;">
-                  paper
-                </a>
+                <a href="{{ paper.paper_url }}" target="_blank" class="paper-btn">paper</a>
               {% endif %}
             </div>
           {% endif %}
@@ -86,10 +80,7 @@ layout: default
           {% endif %}
           {% if paper.paper_url %}
             <div style="margin-top: 0.75rem;">
-              <a href="{{ paper.paper_url }}" target="_blank"
-                 style="display: inline-block; border: 1px solid var(--global-theme-color); border-radius: 4px; padding: 2px 10px; font-size: 0.78em; color: var(--global-theme-color); text-decoration: none; font-weight: 500;">
-                paper
-              </a>
+              <a href="{{ paper.paper_url }}" target="_blank" class="paper-btn">paper</a>
             </div>
           {% endif %}
         </div>
@@ -127,4 +118,3 @@ layout: default
     {% include giscus.liquid %}
   {% endif %}
 </div>
-
